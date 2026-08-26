@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile-fix.css">
   <link rel="stylesheet" href="compact-mobile.css">
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <style>
     .company-field{grid-column:1/-1}
     .lookup-box .form-top h3{font-size:22px}
@@ -188,7 +187,21 @@
     #cay-trong .crop-list>a,#dich-hai .article-list>a,#video .youtube-video-card{box-shadow:0 4px 12px rgba(23,59,43,.09)!important}
     @media(max-width:590px){#cay-trong .section-title,#dich-hai .section-title,#video .section-title{gap:10px!important}#cay-trong .section-title h2,#dich-hai .section-title h2,#video .section-title h2{font-size:22px!important;gap:8px!important}#cay-trong .section-title h2::before,#dich-hai .section-title h2::before,#video .section-title h2::before{flex-basis:24px;width:24px;height:24px;border-width:2.5px;background:radial-gradient(circle,#0f6b45 0 3.5px,transparent 4px 7px,#0f6b45 7.5px 9.5px,transparent 10px)}}
   </style>
-  </head>
+    <style id="mobile-menu-fix">
+    /* Bản vá menu mobile: menu nằm dưới header và không bị lớp nội dung che khuất. */
+    .header{position:relative;z-index:1000;overflow:visible!important}
+    @media(max-width:900px){
+      .desktop-nav{display:none!important}
+      .nav-actions{margin-left:auto}
+      .menu-btn{display:inline-flex!important;align-items:center;justify-content:center;position:relative;z-index:1003;cursor:pointer}
+      .mobile-nav{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;position:absolute!important;top:100%!important;left:0!important;right:0!important;z-index:1002!important;box-sizing:border-box!important;flex-direction:column!important;gap:6px!important;padding:12px 16px 16px!important;background:#fbfff8!important;border-top:1px solid #d7eadc!important;box-shadow:0 14px 24px rgba(18,63,43,.16)!important;max-height:calc(100vh - 70px)!important;overflow-y:auto!important}
+      .mobile-nav.is-open{display:flex!important;visibility:visible!important;opacity:1!important;pointer-events:auto!important;transform:none!important}
+      .mobile-nav a{display:flex!important;align-items:center;justify-content:space-between;width:100%;box-sizing:border-box;padding:13px 14px!important;border-radius:10px;color:#173b2b!important;background:#f1f8ed!important;text-decoration:none!important;font-size:16px!important;line-height:1.2!important}
+      .mobile-nav a:hover,.mobile-nav a:focus-visible,.mobile-nav a.active{background:#e1f3e6!important;color:#075c37!important}
+    }
+    @media(min-width:901px){.mobile-nav{display:none!important}}
+  </style>
+</head>
 <body>
   <div class="topbar"><div class="wrap"><span>⌁ Kiến thức canh tác được chọn lọc cho mùa vụ</span><span>Tra cứu nhanh · Dễ áp dụng · Cập nhật thực tế</span></div></div>
   <header class="header">
@@ -238,8 +251,35 @@
   </script>
   <script src="script.js"></script>
   <script src="cms-content.js"></script>
+  <script>
+    /* Điều khiển menu bằng một trạng thái duy nhất, hoạt động độc lập với script.js. */
+    (()=>{
+      const button=document.getElementById('menu-btn');
+      const menu=document.getElementById('mobile-menu');
+      if(!button||!menu)return;
+      const setMenu=(open)=>{
+        menu.classList.toggle('is-open',open);
+        menu.setAttribute('aria-hidden',String(!open));
+        button.setAttribute('aria-expanded',String(open));
+        button.setAttribute('aria-label',open?'Đóng menu':'Mở menu');
+        button.textContent=open?'×':'☰';
+      };
+      setMenu(false);
+      button.addEventListener('click',(event)=>{
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        setMenu(!menu.classList.contains('is-open'));
+      },true);
+      menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>setMenu(false)));
+      document.addEventListener('click',(event)=>{
+        if(menu.classList.contains('is-open')&&!menu.contains(event.target)&&event.target!==button)setMenu(false);
+      });
+      window.addEventListener('resize',()=>{if(window.innerWidth>900)setMenu(false)});
+    })();
+  </script>
 </body>
 </html>
+
 
 
 
