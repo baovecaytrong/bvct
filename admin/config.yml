@@ -1,0 +1,51 @@
+backend:
+  name: github
+  repo: baovecaytrong/bvct
+  branch: main
+
+site_url: https://baovecaytrong.github.io/bvct/
+display_url: https://baovecaytrong.github.io/bvct/
+logo_url: https://baovecaytrong.github.io/bvct/images/logo.png
+
+media_folder: "images/uploads"
+public_folder: "images/uploads"
+
+locale: "vi"
+publish_mode: simple
+
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
+
+collections:
+  - name: "site_content"
+    label: "Nội dung website"
+    files:
+      - name: "articles"
+        label: "Bài viết trang chủ"
+        file: "data/site-content.json"
+        format: "json"
+        fields:
+          - label: "Bài viết cây trồng"
+            name: "crop_posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            label_singular: "bài viết cây trồng"
+            fields: &article_fields
+              - { label: "Mã bài viết", name: "id", widget: "string", hint: "Viết không dấu, dùng dấu gạch ngang và không trùng bài khác. Ví dụ: ky-thuat-trong-lua" }
+              - { label: "Tiêu đề", name: "title", widget: "string" }
+              - { label: "Mô tả ngắn", name: "summary", widget: "text" }
+              - { label: "Nhóm nội dung", name: "category", widget: "string" }
+              - { label: "Nhãn trên ảnh", name: "label", widget: "string", required: false }
+              - { label: "Ảnh đại diện", name: "image", widget: "image" }
+              - { label: "Bài nổi bật", name: "featured", widget: "boolean", default: false }
+              - { label: "Cho phép hiển thị", name: "published", widget: "boolean", default: true }
+              - { label: "Nội dung chi tiết", name: "content", widget: "text" }
+
+          - label: "Bài viết dịch hại"
+            name: "pest_posts"
+            widget: "list"
+            summary: "{{fields.title}}"
+            label_singular: "bài viết dịch hại"
+            fields: *article_fields

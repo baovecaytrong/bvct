@@ -1,0 +1,105 @@
+{
+  "crop_posts": [
+    {
+      "id": "lua-tu-dong-ruong-den-tung-giai-doan-cham-soc",
+      "title": "Lúa — từ đồng ruộng đến từng giai đoạn chăm sóc",
+      "summary": "Nhận diện dịch hại, theo dõi ruộng và lựa chọn kỹ thuật phù hợp với thời điểm sinh trưởng.",
+      "category": "Cây lúa",
+      "label": "HỒ SƠ MÙA VỤ · 01",
+      "image": "images/hero.jpg",
+      "featured": true,
+      "published": true,
+      "content": "Canh tác lúa hiệu quả bắt đầu từ việc quan sát ruộng thường xuyên và ghi nhận sự thay đổi của cây qua từng giai đoạn. Màu lá, số dảnh, tình trạng nước và dấu hiệu dịch hại là những thông tin quan trọng để đưa ra quyết định chăm sóc.\n\nỞ mỗi giai đoạn sinh trưởng, người trồng cần điều chỉnh nước và dinh dưỡng phù hợp với điều kiện thực tế. Khi phát hiện dấu hiệu bất thường, nên xác định đúng nguyên nhân trước khi áp dụng biện pháp xử lý.\n\nNội dung có tính chất tham khảo. Hãy đối chiếu hướng dẫn chuyên môn và điều kiện đồng ruộng trước khi áp dụng."
+    },
+    {
+      "id": "ky-thuat-cham-soc-lua-theo-mua-vu",
+      "title": "Kỹ thuật chăm sóc lúa theo mùa vụ",
+      "summary": "Những mốc cần theo dõi để ruộng lúa sinh trưởng khỏe và đồng đều.",
+      "category": "Cây lúa",
+      "label": "KỸ THUẬT CANH TÁC",
+      "image": "images/hero.jpg",
+      "featured": false,
+      "published": true,
+      "content": "Việc chăm sóc lúa cần bám sát giai đoạn sinh trưởng và điều kiện thời tiết của từng mùa vụ. Người trồng nên kiểm tra mật độ cây, mực nước, màu lá và tình trạng sâu bệnh theo lịch thăm đồng.\n\nCác quyết định về nước và dinh dưỡng cần dựa trên tình trạng thực tế của ruộng, tránh áp dụng một công thức cố định cho mọi thời điểm."
+    },
+    {
+      "id": "quan-ly-vuon-ca-phe-trong-mua-kho",
+      "title": "Quản lý vườn cà phê trong mùa khô",
+      "summary": "Giữ ẩm, chăm đất và theo dõi tán cây trước giai đoạn ra hoa.",
+      "category": "Cà phê",
+      "label": "CÀ PHÊ · MÙA KHÔ",
+      "image": "images/hero-drone.webp",
+      "featured": false,
+      "published": true,
+      "content": "Trong mùa khô, cần theo dõi độ ẩm đất và tình trạng tán cây để bố trí nước tưới phù hợp. Lớp phủ hữu cơ có thể góp phần hạn chế mất nước và bảo vệ bề mặt đất.\n\nNên kiểm tra vườn định kỳ, đặc biệt trước giai đoạn ra hoa, để phát hiện sớm cành yếu, lá bất thường hoặc dấu hiệu dịch hại."
+    },
+    {
+      "id": "nhip-ra-hoa-va-cham-trai-tren-cay-xoai",
+      "title": "Nhịp ra hoa và chăm trái trên cây xoài",
+      "summary": "Nhận diện các mốc phát triển để chủ động chăm sóc và bảo vệ trái.",
+      "category": "Xoài",
+      "label": "XOÀI · CHĂM TRÁI",
+      "image": "images/pest.jpg",
+      "featured": false,
+      "published": true,
+      "content": "Theo dõi nhịp ra hoa giúp người trồng nhận biết đúng thời điểm cần chăm sóc và bảo vệ chùm hoa. Khi cây mang trái, cần quan sát khả năng giữ trái, tình trạng tán và các dấu hiệu bất thường.\n\nViệc chăm sóc nên được điều chỉnh theo tuổi cây, sức cây, thời tiết và điều kiện cụ thể của vườn."
+    },
+    {
+      "id": "bo-re-khoe-cho-cay-sau-rieng-kien-thiet",
+      "title": "Bộ rễ khỏe cho cây sầu riêng kiến thiết",
+      "summary": "Kiểm tra đất, nước và bộ rễ để cây phát triển vững trong giai đoạn đầu.",
+      "category": "Sầu riêng",
+      "label": "SẦU RIÊNG · KIẾN THIẾT",
+      "image": "images/hero.jpg",
+      "featured": false,
+      "published": true,
+      "content": "Giai đoạn kiến thiết cần ưu tiên điều kiện đất thông thoáng và khả năng thoát nước quanh vùng rễ. Cây non nên được theo dõi thường xuyên để phát hiện sớm dấu hiệu sinh trưởng chậm hoặc tổn thương rễ.\n\nChế độ nước và dinh dưỡng cần phù hợp với sức cây, thời tiết và đặc điểm đất tại vườn."
+    }
+  ],
+  "pest_posts": [
+    {
+      "id": "sau-cuon-la",
+      "title": "Sâu cuốn lá nhỏ hại lúa: nhận biết sớm để bảo vệ bộ lá",
+      "summary": "Dấu hiệu thường gặp, thời điểm theo dõi và nguyên tắc quản lý phù hợp.",
+      "category": "Sâu hại · Cây lúa",
+      "label": "SÂU HẠI · CÂY LÚA",
+      "image": "images/pest.jpg",
+      "featured": true,
+      "published": true,
+      "content": "Sâu non thường nhả tơ cuốn lá và ăn phần mô xanh bên trong, làm giảm diện tích quang hợp. Cần kiểm tra nhiều điểm trong ruộng để đánh giá mức độ xuất hiện và tuổi sâu.\n\nƯu tiên theo dõi thiên địch và tình trạng thực tế của ruộng. Chỉ lựa chọn biện pháp xử lý khi cần thiết và tuân thủ hướng dẫn chuyên môn."
+    },
+    {
+      "id": "dao-on",
+      "title": "Bệnh đạo ôn trên lúa: triệu chứng và biện pháp quản lý",
+      "summary": "Thông tin nhận diện và xử lý theo quản lý tổng hợp, giúp ruộng lúa giữ bộ lá khỏe.",
+      "category": "Bệnh hại · Cây lúa",
+      "label": "BỆNH HẠI · CÂY LÚA",
+      "image": "images/pest.jpg",
+      "featured": false,
+      "published": true,
+      "content": "Bệnh đạo ôn có thể xuất hiện trên lá, cổ bông và các bộ phận khác của cây lúa. Cần phân biệt triệu chứng điển hình với tổn thương do các nguyên nhân khác.\n\nQuản lý tổng hợp gồm theo dõi ruộng, sử dụng giống phù hợp, bón phân cân đối và xử lý theo khuyến cáo chuyên môn khi cần thiết."
+    },
+    {
+      "id": "sau-duc-than",
+      "title": "Sâu đục thân bắp: nhận diện và cách phòng trừ",
+      "summary": "Theo dõi sâu hại từ giai đoạn cây con và kiểm tra dấu hiệu trên lá, thân.",
+      "category": "Sâu hại · Cây ngô",
+      "label": "SÂU HẠI · CÂY NGÔ",
+      "image": "images/hero.jpg",
+      "featured": false,
+      "published": true,
+      "content": "Sâu đục thân có thể gây dấu hiệu trên lá non trước khi đi sâu vào thân cây. Kiểm tra sớm giúp đánh giá đúng mức độ gây hại và lựa chọn thời điểm quản lý phù hợp.\n\nNên kết hợp vệ sinh đồng ruộng, theo dõi thường xuyên và áp dụng biện pháp theo hướng dẫn chuyên môn."
+    },
+    {
+      "id": "chet-nhanh",
+      "title": "Bệnh chết nhanh trên hồ tiêu: nguyên nhân và xử lý",
+      "summary": "Chủ động chăm đất, chăm rễ và theo dõi các dấu hiệu bất thường trong vườn tiêu.",
+      "category": "Bệnh hại · Hồ tiêu",
+      "label": "BỆNH HẠI · HỒ TIÊU",
+      "image": "images/hero-drone.webp",
+      "featured": false,
+      "published": true,
+      "content": "Vườn tiêu cần được kiểm tra khả năng thoát nước, tình trạng vùng rễ và biểu hiện trên tán. Khi cây có dấu hiệu héo bất thường, cần khoanh vùng và xác định nguyên nhân sớm.\n\nViệc quản lý nên kết hợp chăm sóc đất, vệ sinh vườn và thực hiện khuyến cáo chuyên môn phù hợp với điều kiện thực tế."
+    }
+  ]
+}
