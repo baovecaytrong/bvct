@@ -162,6 +162,19 @@
     #video .youtube-video-card p{margin:0;color:#526b5b;font-size:10px;line-height:1.4}
     @media(max-width:830px){#video .video-youtube-feature{grid-template-columns:1fr}#video .youtube-player-wrap,#video .youtube-player{min-height:250px}#video .youtube-video-list{display:grid;grid-template-columns:1fr;gap:10px}}
     @media(max-width:590px){#video .video-youtube-copy{padding:22px 18px}#video .video-youtube-copy h3{font-size:25px}#video .youtube-video-card{grid-template-columns:96px minmax(0,1fr);min-height:94px;padding:8px;gap:10px}#video .youtube-thumb{width:96px;height:72px}#video .youtube-video-card h3{font-size:14px}#video .youtube-video-card p{font-size:10px}}
+    /* Bố cục Video mới: dùng toàn bộ chiều rộng cho một video chính; bỏ dãy hình phụ không cần thiết. */
+    #video .video-layout{display:block!important}
+    #video .video-youtube-feature{width:100%;grid-template-columns:1.08fr .92fr}
+    #video .youtube-video-list{display:none!important}
+    @media(max-width:830px){#video .video-youtube-feature{grid-template-columns:1fr}}
+    /* Bố cục theo yêu cầu: trình phát lớn ở trái, các thẻ hình Video giữ nguyên ở phải; bỏ riêng phần chữ của khung chính. */
+    #video .video-layout{display:grid!important;grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr)!important;gap:16px!important;align-items:start!important}
+    #video .video-youtube-feature{display:block!important;width:100%;min-height:0!important;height:auto!important}
+    #video .video-youtube-copy{display:none!important}
+    #video .youtube-player-wrap{height:360px!important;min-height:360px!important}
+    #video .youtube-player{height:360px!important;min-height:360px!important}
+    #video .youtube-video-list{display:flex!important;flex-direction:column!important;gap:12px!important;height:auto!important}
+    @media(max-width:830px){#video .video-layout{grid-template-columns:1fr!important;gap:12px!important}#video .video-youtube-feature{height:auto!important;min-height:0!important}#video .youtube-player-wrap,#video .youtube-player{height:auto!important;min-height:300px!important}.youtube-video-list{height:auto!important}}
   </style>
   <style id="section-heading-polish">
     /* Cải thiện trang chủ: ba đề mục dùng icon tròn đồng tâm, chữ xanh đậm và không có đường kẻ trang trí. */
