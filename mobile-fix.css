@@ -1,0 +1,251 @@
+/* Chỉnh riêng danh sách bài liên quan trên điện thoại: số | ảnh | nội dung */
+@media (max-width: 590px) {
+  .article-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .article-list > a {
+    display: grid;
+    grid-template-columns: 22px 74px minmax(0, 1fr);
+    grid-template-rows: auto;
+    align-items: start;
+    gap: 8px;
+    min-height: 78px;
+    padding: 0 0 8px;
+  }
+
+  .article-list > a > span {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 4px;
+  }
+
+  .article-list > a > .leaf-thumb {
+    grid-column: 2;
+    grid-row: 1;
+    width: 74px;
+    height: 70px;
+  }
+
+  .article-list > a > div:not(.leaf-thumb) {
+    grid-column: 3;
+    grid-row: 1;
+    min-width: 0;
+  }
+
+  .article-list > a > em {
+    display: none;
+  }
+
+  .article-list > a h3 {
+    margin: 3px 0 0;
+    font-size: 13px;
+    line-height: 1.23;
+  }
+
+  .article-list > a p {
+    display: none;
+  }
+}
+
+/* Mobile usability pass: chống tràn ngang, tăng vùng chạm và giữ chữ dễ đọc. */
+@media (max-width: 590px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    max-width: 100%;
+  }
+
+  input[type="search"],
+  input[type="text"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  .icon-btn,
+  .menu-btn,
+  .back-top {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .mobile-nav {
+    left: 12px;
+    right: 12px;
+    max-height: calc(100vh - 84px);
+    overflow-y: auto;
+  }
+
+  .mobile-nav a {
+    min-height: 46px;
+    align-items: center;
+  }
+
+  .page-title,
+  .page-lead,
+  .grid-head,
+  .section-title,
+  .now-playing-row,
+  .pest-page-note {
+    min-width: 0;
+  }
+
+  .page-title,
+  .grid-head h2,
+  .section-title h2,
+  .now-playing h3 {
+    overflow-wrap: anywhere;
+  }
+
+  .grid-head {
+    align-items: flex-start;
+  }
+
+  .filter-row,
+  .host-selector,
+  .library-tabs,
+  .speed-options,
+  .lookup-hints {
+    gap: 8px;
+  }
+
+  .filter-row button,
+  .host-chip,
+  .library-tabs button,
+  .speed-options button,
+  .lookup-hints button,
+  .lookup-pagination button {
+    min-height: 44px !important;
+  }
+
+  .lookup-search-row button,
+  .form-actions button,
+  .dialog-actions button,
+  .copy-link,
+  .pest-page-note a {
+    min-height: 46px !important;
+  }
+
+  .lookup-table td,
+  .lookup-disclaimer,
+  .dialog-grid dt,
+  .dialog-grid dd,
+  .video-note,
+  .field-note-card p {
+    overflow-wrap: anywhere;
+  }
+
+  .product-dialog {
+    max-height: calc(100dvh - 24px);
+    overflow-y: auto;
+  }
+
+  .dialog-close {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+  }
+
+  .footer-grid > div,
+  .library-tools,
+  .lookup-search-row,
+  .lookup-table tr {
+    min-width: 0;
+  }
+}
+
+/* Điện thoại rất nhỏ: ưu tiên một cột để nội dung không bị ép. */
+@media (max-width: 380px) {
+  .wrap {
+    width: calc(100% - 24px);
+  }
+
+  .brand span > b {
+    font-size: 12px;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .site-search {
+    gap: 5px;
+  }
+
+  body .pest-grid,
+  body .library-grid,
+  body .featured-list,
+  body .lookup-table tr,
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pest-card {
+    display: grid;
+    grid-template-columns: 112px minmax(0, 1fr);
+  }
+
+  .pest-card img {
+    height: 100%;
+    min-height: 112px;
+  }
+
+  .pest-card h3 {
+    min-height: 0;
+  }
+
+  body .lookup-table td,
+  body .lookup-table td:nth-child(1),
+  body .lookup-table td:nth-child(6),
+  body .lookup-table .empty-lookup {
+    grid-column: 1;
+  }
+
+  .dialog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dialog-grid dt {
+    border-bottom: 0;
+    padding-bottom: 3px;
+  }
+
+  .dialog-grid dd {
+    padding-top: 3px;
+  }
+
+  .library-tools {
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .video-search.show {
+    width: 100%;
+    order: -1;
+  }
+
+  .footer-grid > div:first-child {
+    grid-column: 1;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+  }
+}

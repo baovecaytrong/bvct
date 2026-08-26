@@ -1,0 +1,46 @@
+/* Thu gọn nhịp dọc của toàn bộ nội dung trên màn hình điện thoại. */
+@media (max-width: 590px) {
+  .section { padding: 38px 0; }
+
+  .section-title { margin-bottom: 14px; }
+  .section-title h2 { font-size: 25px; }
+
+  .crop-feature { min-height: 280px; }
+  .crop-feature .feature-copy { bottom: 14px; }
+  .crop-feature .feature-copy h3 { font-size: 21px; }
+  .crop-list { padding-top: 8px; }
+  .crop-list-head { padding-bottom: 8px; }
+  .crop-list > a { min-height: 43px; padding: 6px 0; }
+  .crop-list b { font-size: 14px; }
+  .crop-list p { margin-top: 1px; font-size: 8px; }
+
+  .pest-layout { gap: 12px; }
+  .pest-feature { min-height: 310px; }
+  .pest-feature .feature-copy { bottom: 14px; }
+  .pest-feature .feature-copy h3 { font-size: 21px; }
+  .pest-feature .feature-copy>b { margin-top: 8px; }
+
+  .lookup-section { padding: 40px 0; }
+  .lookup-grid { gap: 16px; }
+  .lookup-copy h2 { margin: 8px 0; font-size: 29px; }
+  .lookup-copy p { margin: 0 0 8px; font-size: 11px; }
+  .lookup-box { padding: 13px; }
+  .form-top { padding-bottom: 10px; }
+  .form-grid { gap: 7px; padding: 10px 0; }
+  .form-grid input { padding: 8px; }
+  .lookup-result { margin-top: 10px; padding: 8px; }
+
+  .video-feature { min-height: 280px; }
+  .video-feature .feature-copy { bottom: 14px; }
+  .video-feature .feature-copy h3 { font-size: 20px; }
+  .video-list { gap: 6px; }
+  .video-list > a { min-height: 64px; padding-bottom: 6px; }
+  .clip-thumb { width: 88px; height: 64px; }
+  .video-list h3 { font-size: 13px; line-height: 1.2; }
+  .video-list p { font-size: 9px; }
+
+  footer { padding-top: 37px; }
+  .footer-grid { gap: 20px 16px; padding-bottom: 20px; }
+  .footer-grid h4 { margin-bottom: 8px; }
+  .footer-grid > div > a:not(.brand) { margin: 4px 0; }
+}
